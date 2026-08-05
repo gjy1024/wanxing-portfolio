@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.pnpm-store/
+tmp/
+registry/
+scripts/
+
+# Private source material is intentionally excluded from the public repository.
+个人简介/
+手风琴目录图片/
+电赛/
+科研论文/
+*.docx
+
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.log
