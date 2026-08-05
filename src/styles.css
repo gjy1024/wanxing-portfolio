@@ -488,6 +488,7 @@ a:focus-visible {
   font-weight: 700;
   line-height: 1.12;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .detail-subtitle {
@@ -530,6 +531,7 @@ a:focus-visible {
   line-height: 1.45;
   letter-spacing: 0;
   white-space: pre-line;
+  overflow-wrap: anywhere;
 }
 
 .research-index .content-lead > p:last-child {
@@ -958,8 +960,7 @@ a:focus-visible {
 
 .profile-editorial__gallery {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(180px, 0.5fr);
-  gap: 18px;
+  grid-template-columns: minmax(0, 1fr);
   align-items: stretch;
   margin-top: 48px;
 }
@@ -974,13 +975,8 @@ a:focus-visible {
 }
 
 .profile-editorial__wide img {
-  aspect-ratio: 16 / 7;
+  aspect-ratio: 16 / 6;
   object-position: center 58%;
-}
-
-.profile-editorial__portrait img {
-  aspect-ratio: 3 / 4;
-  object-position: center 28%;
 }
 
 .profile-editorial__gallery figcaption {
@@ -1717,6 +1713,27 @@ a:focus-visible {
     display: none;
   }
 
+  .detail-header,
+  .content-panel,
+  .content-section,
+  .content-section__heading,
+  .research-topic-link__body,
+  .archive-project,
+  .innovation-plan {
+    min-width: 0;
+  }
+
+  .detail-subtitle,
+  .content-section p,
+  .content-section li,
+  .archive-project p,
+  .archive-project li,
+  .innovation-plan p,
+  .innovation-plan li,
+  .content-footer span {
+    overflow-wrap: anywhere;
+  }
+
   .profile-editorial__lead,
   .profile-editorial__gallery,
   .archive-heading,
@@ -1731,13 +1748,17 @@ a:focus-visible {
     aspect-ratio: 4 / 3;
   }
 
-  .profile-editorial__portrait {
-    width: min(100%, 320px);
-  }
-
   .profile-editorial__gallery figcaption {
     flex-direction: column;
     gap: 5px;
+  }
+
+  .home-gallery .ag-panel__text {
+    overflow: visible;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-overflow: clip;
+    white-space: normal;
   }
 
   .archive-heading > span {

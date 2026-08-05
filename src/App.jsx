@@ -205,7 +205,7 @@ const sections = [
     ],
     innovationPlan: {
       title: '基于 Unity3D 与 AirSim 的多无人机仿真平台设计',
-      meta: '大学生创新训练计划 · 在研计划 · 多无人机仿真与动态决策',
+      meta: '大学生创新训练计划 · 多无人机仿真与动态决策',
       summary: '以 Unity3D 的三维场景能力和 AirSim 的飞行、物理与传感器仿真为底座，构建支持多机协同、通信模拟和动态任务的高保真实验平台，为集群算法提供安全、可扩展、可复现的验证环境。',
       objective: '面向复杂动态环境中的多无人机集群，研究路径规划、任务分配、协同通信、实时决策与安全保障，使集群能够在任务变化后重新分组、重新规划并完成闭环任务。',
       tracks: [
@@ -591,7 +591,7 @@ const researchTopics = [
         ],
       })),
     ],
-    sourceNote: '在研计划；内容依据最新版大学生创新训练计划书整理。',
+    sourceNote: '内容依据最新版大学生创新训练计划书整理。',
   },
 ];
 
@@ -1261,10 +1261,6 @@ function DetailPage({
                   <figure className="profile-editorial__wide">
                     <img src={resolveAsset('/assets/profile/garden.jpg')} alt="园林景观中的个人生活记录" loading="lazy" />
                     <figcaption><span>生活切片</span>保留技术之外的观察、行走与审美。</figcaption>
-                  </figure>
-                  <figure className="profile-editorial__portrait">
-                    <img src={resolveAsset('/assets/profile/portrait-mono.jpg')} alt="黑白个人肖像" loading="lazy" />
-                    <figcaption><span>晚荇</span>通信工程 · 2024级</figcaption>
                   </figure>
                 </div>
               </section>
