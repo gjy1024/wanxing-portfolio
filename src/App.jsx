@@ -659,8 +659,9 @@ const buildSearchEntries = () => {
         heading: '个人方向概览',
         text: [
           '目前的能力版图由三条线共同构成：通信与信号处理提供理论坐标，人工智能拓展决策方法，嵌入式实践负责把方案落到真实系统。',
-          '在熟悉的校园里，把通信、智能与工程实践连成一条长期路径。',
-          '保留技术之外的观察、行走与审美。',
+          '通信与信号处理：围绕无线通信、信号分析与系统建模建立理论基础。',
+          '智能决策：关注多智能体强化学习、路径规划与复杂约束下的协同决策。',
+          '工程实现：通过嵌入式控制、无线感知与系统联调完成现场验证。',
         ],
       });
     }
@@ -1240,11 +1241,7 @@ function DetailPage({
 
             {section.id === 'profile' && (
               <section className="profile-editorial" id="profile-editorial" aria-label="个人方向概览">
-                <div className="profile-editorial__lead">
-                  <figure className="profile-editorial__main">
-                    <img src={resolveAsset('/assets/profile/beihang-night.jpg')} alt="校园夜景" loading="lazy" />
-                    <figcaption>在熟悉的校园里，把通信、智能与工程实践连成一条长期路径。</figcaption>
-                  </figure>
+                <div className="profile-editorial__lead profile-editorial__lead--text">
                   <div className="profile-editorial__copy">
                   <p>PERSONAL SIGNAL / 2024</p>
                   <h3>以通信为经，以实践为纬</h3>
@@ -1257,11 +1254,22 @@ function DetailPage({
                   </div>
                   </div>
                 </div>
-                <div className="profile-editorial__gallery">
-                  <figure className="profile-editorial__wide">
-                    <img src={resolveAsset('/assets/profile/garden.jpg')} alt="园林景观中的个人生活记录" loading="lazy" />
-                    <figcaption><span>生活切片</span>保留技术之外的观察、行走与审美。</figcaption>
-                  </figure>
+                <div className="profile-focus-grid" aria-label="能力坐标">
+                  <article>
+                    <span>01</span>
+                    <h4>通信与信号处理</h4>
+                    <p>围绕无线通信、信号分析与系统建模建立理论基础。</p>
+                  </article>
+                  <article>
+                    <span>02</span>
+                    <h4>智能决策</h4>
+                    <p>关注多智能体强化学习、路径规划与复杂约束下的协同决策。</p>
+                  </article>
+                  <article>
+                    <span>03</span>
+                    <h4>工程实现</h4>
+                    <p>通过嵌入式控制、无线感知与系统联调完成现场验证。</p>
+                  </article>
                 </div>
               </section>
             )}
